@@ -1,343 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BYJUS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BYJU'S</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="project.css">
-
 </head>
-
 <body>
-    <nav>
-        <img src="channels4_profile.jpg" alt="">
-        <h1>BYJU'S</h1>
-        <ul>
-            <li>
-                <a>Study Materials</a>
-                <a>BYJU'S Answer</a>
-                <a>Scholarship</a>
-                <a>BTC</a>
-                <a>Buy a Course</a>
-                <a>Sucess Stories</a>
-                <button>Login</button>
-                <i class="fa-solid fa-phone"></i>
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </li>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <img src="logo.png" alt="BYJU's Logo" class="logo">
+        <h1 class="brand-name">BYJU'S</h1>
+        <ul class="nav-links">
+            <li><a href="#">Study Materials</a></li>
+            <li><a href="#">BYJU'S Answer</a></li>
+            <li><a href="#">Scholarship</a></li>
+            <li><a href="#">BTC</a></li>
+            <li><a href="#">Buy a Course</a></li>
+            <li><a href="#">Success Stories</a></li>
+            <li><button class="login-btn">Login</button></li>
+            <li><i class="fa-solid fa-phone"></i></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
         </ul>
     </nav>
-    <div class="main">
-        <img src="banner-mobile-left-image (1).png" alt="">
-        <div class="registration form">
-            <form>
-                <h2>Book Your Free Session</h2> <br>
-                <h4>Learn from India's best teachers</h4> <br>
-                <h3>Select the Session Mode</h3> <br>
-                <div class="btn-div">
-                    <button>Online</button>
-                    <button>Offline</button>
-                </div> <br>
-                <h3>Enter Your Details</h3> <br>
-                <div class="input">
-                    <input type="text" placeholder="Enter Name of Your Child"> <br> <br>
-                    <input type="number" placeholder="Enter your mobile number"> <button>Send OTP</button> <br> <br>
-                    <input type="text" placeholder="Email Address"> <br> <br>
 
-                </div>
-                <div class="input-name">
-                    <select class="State"> <br>
-                        <option>State</option>
-                        <option>Chattisgarh</option>
-                        <option>Karnataka</option>
-                        <option>Madhya pradesh</option>
-                        <option>Punjab</option>
-                        <option>Tamil nadu</option>
-                        <option>Jharkhand</option>
-                        <option>Himachal pardesh</option>
-                        <option>Bihar</option>
-                        <option>Uttarakhand</option>
-                        <option>West bengal</option>
-                        <option>Maharashtra</option>
-                    </select>
-                    <div class="arrow"></div>
-                </div> <br>
-                <div class="input-name">
-                    <input type="Submit" class="button" value="Continue to Scheduele">
-                </div>
+    <!-- Main Section -->
+    <div class="main">
+        <img src="banner-mobile-left-image (1).png" alt="BYJU's Banner" class="main-image">
+        <div class="registration-form">
+            <h2>Book Your Free Session</h2>
+            <h4>Learn from India's best teachers</h4>
+            <h3>Select the Session Mode</h3>
+            <div class="btn-div">
+                <button>Online</button>
+                <button>Offline</button>
+            </div>
+            <h3>Enter Your Details</h3>
+            <form>
+                <input type="text" placeholder="Enter Name of Your Child">
+                <input type="number" placeholder="Enter your mobile number">
+                <button>Send OTP</button>
+                <input type="text" placeholder="Email Address">
+                <select class="state-dropdown">
+                    <option>State</option>
+                    <option>Chattisgarh</option>
+                    <option>Karnataka</option>
+                    <!-- Add other options here -->
+                </select>
+                <input type="submit" value="Continue to Schedule" class="submit-btn">
             </form>
         </div>
     </div>
-    <br>
-    <br>
 
-    <div class="byjus">
-        <h1>Comprehensive learning programs <br>
-            & classes for all students</h1>
-        <br>
-        <p>Become lifelong learners with India's best teachers, <br>
-            engaging video lessons and personalised learning journeys</p>
-        <br>
-    </div>
-    <div class="learn">
-        <div class="card">
-            <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/btla.png" alt="">
-            <div class="text">
-                <h2>BYJU'S</h2>
-                <h6>The Learning App</h6>
-                <p>Personalised learning app
-                    to learn anytime, anywhere</p>
-                <h3>Know More</h3>
+    <!-- Learning Section -->
+    <section class="learning-programs">
+        <h1>Comprehensive Learning Programs & Classes for All Students</h1>
+        <p>Become lifelong learners with India's best teachers, engaging video lessons, and personalized learning journeys</p>
+        <div class="cards">
+            <div class="card">
+                <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/btla.png" alt="BYJU'S App">
+                <div class="card-text">
+                    <h2>BYJU'S</h2>
+                    <p>Personalized learning app to learn anytime, anywhere</p>
+                    <h3>Know More</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/byjus-classes-tutor-img.png" alt="BYJU'S Classes">
+                <div class="card-text">
+                    <h2>BYJU'S Classes</h2>
+                    <p>With Two Teacher's Advantage</p>
+                    <h3>Know More</h3>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/byjus-classes-tutor-img.png" alt="">
-            <div class="text">
-                <h2>BYJU'S classes</h2>
-                <h6>With Two Teacher's Advantage</h6>
-                <p>Personalised learning app
-                    to learn anytime, anywhere</p>
-                <h3>Know More</h3>
-            </div>
-        </div>
-    </div>
-    <div class="prep">
-        <div class="card1">
-            <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/jeeTeaching.png" alt="">
-            <p>Comprehensive learning program
-                for JEE preparation</p>
-            <br>
-            <button>Explore JEE</button>
-        </div>
+    </section>
 
-        <div class="card1">
-            <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/neet_teaching_web.png" alt="">
-            <p>Comprehensive learning program
-                for NEET aspirants</p>
-            <br>
-            <button>Explore NEET</button>
-        </div>
-
-    </div>
-
-    <h1 class="ad">Get the BYJU'S advantage</h1>
-    <div class="learner">
-        <div class="card2">
-            <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/concept-clarity.png" alt="">
-            <p>Conceptual clarity
-                through visualisation</p>
-        </div>
-
-        <div class="card2">
-            <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/personalised-learning.png" alt="">
-            <p>Personalised learning
-                programs</p>
-        </div>
-
-        <div class="card2">
-            <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/unmatched-attention.png" alt="">
-            <p>Unmatched individual
-                attention</p>
-        </div>
-
-    </div>
-
-    <div class="head">
-        <h1>Our students and parents love us</h1>
-    </div>
-
-    <div class="num">
-        <div class="nums">
-            <h1>150+ Million</h1>
-            <p>downloads</p>
-        </div>
-
-        <div class="nums">
-            <h1>4.7+ Star</h1>
-            <p>app rating</p>
-
-        </div>
-
-        <div class="nums">
-            <h1>1701+ Cities</h1>
-            <p>worldwide</p>
-
-        </div>
-
-        <div class="nums">
-            <h1>71 mins avg.</h1>
-            <p>time spent daily</p>
-
-        </div>
-    </div>
-
-    <div class="parent">
-        <div class="p">
-            <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/Devananda.png" alt="">
-            <p>BYJU'S is the best app for my daughter to strengthen<br>her Science basics</p>
-        </div>
-
-        <div class="p">
-            <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/Souradip.png" alt="">
-            <p>Byjus is the best app</p>
-        </div>
-
-        <div class="p">
-            <img src="https://cdn1.byjus.com/wp-content/uploads/2022/04/suraj-peela.png" alt="">
-            <p>byjus is the best app</p>
-        </div>
-
-        <div class="p">
-            <img src="	https://cdn1.byjus.com/wp-content/uploads/2022/04/Manav.png" alt="">
-            <p>byjus is the best app</p>
-        </div>
-
-    </div>
-
-    <div class="footer">
-        <div class="list">
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h2>COURSES</h2>
             <ul>
-                <li>
-                    <h2>COURSES</h2><br>
-                    <a>CBSE</a><br>
-                    <a>ICSE</a><br>
-                    <a>CAT</a><br>
-                    <a>IAS</a><br>
-                    <a>JEE</a><br>
-                    <a>NEET</a><br>
-                    <a>Commerce</a><br>
-                    <a>JEE Main</a><br>
-                    <a>NCERT</a><br>
-                    <a>JEE Advance</a><br>
-                    <a>UPSC Prelims 2022 Question Paper</a><br>
-                    <a>UPSC Prelims 2022 Answer Key</a><br>
-                    <a>IAS Coaching</a><br>
-                    <a>IAS Coaching</a><br>
-                    <a>CBSE Question Papers</a>
-                </li>
+                <li><a href="#">CBSE</a></li>
+                <li><a href="#">ICSE</a></li>
+                <li><a href="#">CAT</a></li>
+                <li><a href="#">JEE</a></li>
+                <li><a href="#">NEET</a></li>
             </ul>
         </div>
-
-        <div class="list">
+        <div class="footer-section">
+            <h2>COMPANY</h2>
             <ul>
-                <li>
-                    <h2>EXAMS</h2><br>
-                    <a>CAT Exam</a><br>
-                    <a>CAT 2023</a><br>
-                    <a>GATE Exam</a><br>
-                    <a>GATE 2024</a><br>
-                    <a>IAS Exam</a><br>
-                    <a>UPSC Exam</a>
-                    <a>UPSC Syllabus</a><br>
-                    <a>UPSC 2023</a><br>
-                    <a>Bank Exam</a><br>
-                    <a>Government Exams</a><br>
-                    <a>Education News</a><br>
-                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">FAQ</a></li>
             </ul>
         </div>
-
-        <div class="list">
+        <div class="footer-section">
+            <h2>SUPPORT</h2>
             <ul>
-                <li>
-                    <h2>EXAM-PREP</h2><br>
-                    <a>Free CAT Prep</a><br>
-                    <a>Free IAS Prep</a><br>
-                    <a>Maths</a><br>
-                    <a>Physics</a><br>
-                    <a>Chemistry</a><br>
-                    <a>Biology</a><br>
-                    <a>JEE 2024</a><br>
-                    <a>JEE Advanced 2023 Question Paper with Answers</a><br>
-                    <a>JEE Main Mock Test</a><br>
-                    <a>JEE Main 2023 Question Papers with Answers</a><br>
-                    <a>JEE Main 2022 Question Papers with Answers</a><br>
-                    <a>JEE Advanced 2022 Question Paper with Answers</a><br>
-                    <a>NEET 2023 Question Paper</a><br>
-                    <a>NEET 2023 Question Paper Analysis</a><br>
-                    <a>NEET 2022 Answer Key</a><br>
-                    <a>BYJU'S Exam Prep</a><br>
-                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
             </ul>
         </div>
-
-        <div class="list">
-            <ul>
-                <li>
-                    <h2>COMPANY</h2><br>
-                    <a>About us </a><br>
-                    <a>Contact us </a><br>
-                    <a>Contact our Financial Partners</a><br>
-                    <a>Investors</a><br>
-                    <a>Careers</a><br>
-                    <a>BYJU'S in Media</a>
-                    <a>Social Initiative - Education for All</a><br>
-                    <a>BYJU'S APP</a><br>
-                    <a>FAQ</a><br>
-                    <a>Students Stories - The Learning Tree</a><br>
-                    <a>Support</a><br>
-                    <a>Faces of BYJU'S – Life at BYJU'S</a><br>
-                    <a>Blog</a><br>
-                    <a>BYJU'S Give</a><br>
-                </li>
-            </ul>
-        </div>
-
-        <div class="list">
-            <ul>
-                <li>
-                    <h2>FREE TEXTBOOKS</h2><br>
-                    <a>NCERT Solutions</a><br>
-                    <a>NCERT Exemplar</a><br>
-                    <a>NCERT Solutions for Class 6</a><br>
-                    <a>NCERT Solutions for Class 7</a><br>
-                    <a>NCERT Solutions for Class 8</a><br>
-                    <a>NCERT Solutions for Class 9</a>
-                    <a>NCERT Solutions for Class 10</a><br>
-                    <a>NCERT Solutions for Class 11</a><br>
-                    <a>NCERT Solutions for Class 11 English</a><br>
-                    <a>NCERT Solutions for Class 12 English</a><br>
-                    <a>NCERT Solutions for Class 12</a><br>
-                    <a>RD Sharma Solutions</a><br>
-                    <a>RD Sharma Class 10 Solutions</a><br>
-                    <a>ICSE Selina Solutions</a><br>
-                </li>
-            </ul>
-        </div>
-
-
-        <div class="list">
-            <ul>
-                <li>
-                    <h2>STATE BOARD</h2><br>
-                    <a>Maharashtra</a><br>
-                    <a>Gujarat</a><br>
-                    <a>Tamil Nadu</a><br>
-                    <a>Karnataka</a><br>
-                    <a>Kerala</a><br>
-                    <a>Andhra Pradesh</a>
-                    <a>Telangana</a><br>
-                    <a>Uttar Pradesh</a><br>
-                    <a>Bihar</a><br>
-                    <a>Rajasthan</a><br>
-                    <a>Madhya Pradesh</a><br>
-                    <a>West Bengal</a><br>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-    </div>
-
-
-
-
-    </div>
+    </footer>
 </body>
-
 </html>
